@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div id="main">
+    <form action="/" method="POST">
+        <center><strong class="directions">Read Message: </strong></center>
+        <center><p><button class="submit-button" type="submit"><span class="button-text">Confirm</span></button></p></center>
+    </form>
+    <script>
+        let message = '{{ message }}';
+        alert("Message: " + message);
+    </script>
+</div>
+{% endblock %}

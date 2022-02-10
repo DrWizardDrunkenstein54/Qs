@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div id="main">
+    <form action="/add_contact" method="POST">
+        <center><strong class="directions">Please enter the Name and ID of your new contact:</strong></center>
+        <center><p class="label">Name: <input type="text" name="username" /></p></center>
+        <center><p class="label">ID: <input type="text" name="id" /></p></center>
+        <center><p><button class="submit-button" type="submit"><span class="button-text">Submit</span></button></p></center>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div id="main">
+    <form action="/send_message" method="POST">
+        <center><strong class="directions">Please enter the Name, ID, and Message:</strong></center>
+        <center><p class="label">Name: <input type="text" name="receiver" /></p></center>
+        <center><p class="label"> ID: <input type="text" name="receiver_id" /></p></center>
+        <center><p class="label">Message: <input type="text" name="message" /></p></center>
+        <center><p><button class="submit-button" type="submit"><span class="button-text">Submit</span></button></p></center>
+    </form>
+</div>
+{% endblock %}
